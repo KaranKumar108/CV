@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica", sans-serif;
+        background: rgb(26, 188, 156);
+        background: -moz-linear-gradient(-45deg,
+                rgba(26, 188, 156, 1) 0%,
+                rgba(142, 68, 173, 1) 100%);
+        background: -webkit-linear-gradient(-45deg,
+                rgba(26, 188, 156, 1) 0%,
+                rgba(142, 68, 173, 1) 100%);
+        background: linear-gradient(135deg,
+                rgba(26, 188, 156, 1) 0%,
+                rgba(142, 68, 173, 1) 100%);
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .avatar {
+        width: 200px;
+        height: 200px;
+        box-sizing: border-box;
+        border: 5px white solid;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0px 110px;
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+        animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0% {
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            transform: translatey(0px);
+        }
+
+        50% {
+            box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+            transform: translatey(-20px);
+        }
+
+        100% {
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            transform: translatey(0px);
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 621px;
+        padding: 20px 40px;
+        box-sizing: border-box;
+    }
+    p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 50px;
+  margin-top: 10px;
+  margin-bottom: -25px;
+}
+h2{
+    color: blue;
+}
+h1{
+    font-size: 280%;
+}
+.kumar{
+    color: white;
+}
+.smedia{
+    width: 15%;
+    display: inline;
+    background: transparent;
+    margin: 0px 0px;
+}
+span a{
+    line-height: 0px;
+
+}
+</style>
+
+<body>
+    <div class="container">
+        <div class="avatar">
+            <img src="/images/img.jpg" />
+        </div>
+        <div class="content">
+            <h1><b>KARAN <span class="kumar">KUMAR</span> </b></h1>
+            <h2>Software Devloper</h2>
+            <p>Follow me on:</p>
+                <span>  
+                    <a href="https://www.facebook.com/kkvmalhi?mibextid=ZbWKwL" target="_blank">
+                        <img class="smedia" src="./images/fb.png" align="middle"></a>
+                </span>
+                <span>  
+                    <a href="https://instagram.com/ds_alpha07?igshid=NmQ2ZmYxZjA=" target="_blank"> 
+                        <img class="smedia" src="./images/insta.png" align="middle"></a>
+                </span>
+                <span>
+                    <a href="https://twitter.com/DSALPHA_07?t=y9ZKeGo_LhbVN50zNu1aBw&s=09" target="_blank"> 
+                       <img class="smedia" src="./images/twitter.png" align="middle"></a>
+                </span>
+                <span>
+                    <a href="https://github.com/KaranKumar108" target="_blank">
+                     <img class="smedia" src="./images/github.png" align="middle"></a>
+                </span>
+                <!-- <span>  
+                    <a href="https://www.facebook.com/kkvmalhi?mibextid=ZbWKwL">
+                        <img class="smedia" src="./images/fb.png" align="middle">Facebook</a>
+                </span>
+                <span>  
+                    <a href="https://instagram.com/ds_alpha07?igshid=NmQ2ZmYxZjA="> 
+                        <img class="smedia" src="./images/insta.png" align="middle">Insta</a>
+                </span>
+                <span>
+                    <a href="https://twitter.com/DSALPHA_07?t=y9ZKeGo_LhbVN50zNu1aBw&s=09"> 
+                       <img class="smedia" src="./images/twitter.png" align="middle">Twitter</a>
+                </span>
+                <span>
+                    <a href="https://github.com/KaranKumar108">
+                     <img class="smedia" src="./images/github.png" align="middle">GitHub</a>
+                </span> -->
+        </div>
+</body>
+</html>
